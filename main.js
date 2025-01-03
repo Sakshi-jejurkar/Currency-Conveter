@@ -2,7 +2,7 @@ console.log("main.js working");
 
 const populate = async (value, currency) => {
   let myStr = "";
-  const url = `https://api.currencyapi.com/v3/latest?apikey=cur_live_Y8C24faHH6uZrtfbppkXKoVjuPyoXExFzuT6vhjp&base_currency=${currency}`;
+  const url = `add your api=${currency}`;
 
   try {
     const response = await fetch(url);
