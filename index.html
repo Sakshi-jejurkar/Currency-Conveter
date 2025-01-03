@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Conveter</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+
+            font-family: "Lato", serif;
+            font-weight: 900;
+            display: flex;
+            font-size: 17px;
+            background-color: rgb(245, 12, 179);
+            padding: 23px;
+
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: black
+        }
+
+        nav li a:hover {
+            text-decoration: none;
+            color: rgb(35, 9, 60);
+
+        }
+
+        div.logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 23px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 23px;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        .container {
+            min-height: 100vh;
+            font-family: "Poppins", serif;
+            background-color: ;
+            max-width: 80vw;
+            margin: auto;
+
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+            margin: 25px;
+        }
+
+        .container h1 {
+            margin: 23px;
+        }
+
+        .container form label {
+            font-size: 25px;
+
+
+        }
+
+        .container form input[type="number"],
+        select,
+        label {
+            font-size: 18px;
+            margin: 23px 0;
+            width: 23vw;
+            padding: ;
+        }
+
+        .btn {
+            width: 144px;
+            padding: 5px 11px;
+            font-size: 20px;
+            background-color: rgb(221, 34, 34);
+            color: black;
+            border-radius: 13px;
+            cursor: pointer;
+        }
+
+        .output {
+            display: ;
+        }
+
+
+
+        footer {
+            font-family: "Poppins", serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <nav>
+        <div class="logo">MyCurrencyConverter</div>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+
+    <div class="container">
+        <h1>Choose your courrency</h1>
+        <form action="/action.php" mathod="get">
+            <label for="quantity">Choose a quantity:</label>
+            <input type="number" id="quantity" name="quantity"  required>
+            <label for="Currency">Choose a Currency:</label>
+            <select name="Currency">
+                <option value="INR">Indian Rupees</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+            </select>
+
+            <button class="btn" type="submit">submit</button><br>
+        </form>
+
+        <div class="output">
+            <h1>Converted Currency Table</h1>
+            <table style="width: 50vw; 
+            text-align: center;
+             border: 2px solid black;
+             font-size: 20px;">
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &copy; All right reserved;
+
+
+
+        <script src="main.js"></script>
+
+    </footer>
+
+</body>
+
+</html>
